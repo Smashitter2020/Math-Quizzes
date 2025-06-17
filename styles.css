@@ -24,21 +24,22 @@ input {
 }
 
 button {
-    margin-top: 10px;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #3b82f6;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 4px;
     outline:none;
+    transition: .2s ease;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #2563eb;
 }
+
 button:focus {
-    outline: #28a745 2px solid;
+    outline: #3b82f6 4px solid;
     outline-offset: 2px;
 }
