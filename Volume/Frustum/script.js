@@ -12,7 +12,7 @@ function generateQuestion() {
 
 function checkAnswer() {
     const userAnswer = parseFloat(document.getElementById("answer").value);
-    const correctAnswer = (1/3) * Math.PI * height * (Math.pow(bottomradius, 2) * bottomradius * topradius * Math.pow(topradius, 2));
+    const correctAnswer = (1/3) * Math.PI * height * (Math.pow(bottomradius, 2) + bottomradius * topradius + Math.pow(topradius, 2));
 
     if (Math.abs(userAnswer - correctAnswer) < 0.01) { // Allow small rounding tolerance
         document.getElementById("result").innerText = "Correct! 🎉";
