@@ -14,7 +14,7 @@ function checkAnswer() {
     const userAnswer = parseInt(document.getElementById("answer").value);
     const correctAnswer = length * width * height;
 
-    if (Math.abs(userAnswer - correctAnswer)) {
+    if (userAnswer === correctAnswer) {
         document.getElementById("result").innerText = "Correct! 🎉";
         document.getElementById("result").style.color = "green";
     } else {
