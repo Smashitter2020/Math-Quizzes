@@ -1,7 +1,7 @@
 let radius;
 
 function generateQuestion() {
-    num1 = Math.floor(Math.random() * 25) + 1;
+    radius = Math.floor(Math.random() * 25) + 1;
     document.getElementById("question").innerText = `What is the area of a circle with radius ${radius}?`;
     document.getElementById("result").innerText = "";
     document.getElementById("answer").value = "";
