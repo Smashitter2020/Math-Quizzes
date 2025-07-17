@@ -9,7 +9,7 @@ function generateQuestion() {
 
 function checkAnswer() {
     const userAnswer = parseFloat(document.getElementById("answer").value);
-    const correctAnswer = num1 / 6;
+    const correctAnswer = ((6 - num1) / 6);
 
     if (Math.abs(userAnswer - correctAnswer) < 0.01) {
         document.getElementById("result").innerText = "Correct!";
