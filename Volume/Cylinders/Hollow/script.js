@@ -6,7 +6,7 @@ function generateQuestion() {
     height = Math.floor(Math.random() * 10) + 1;
 
     // Ensure inner radius is less than outer radius to avoid negative numbers
-    if (innerradius >= outerradius) {
+    if (outerradius <= innerradius) {
       [outerradius, innerradius] = [innerradius, outerradius];
       innerradius--;
     }
