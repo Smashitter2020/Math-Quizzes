@@ -5,8 +5,10 @@ function generateQuestion() {
     innerradius = Math.floor(Math.random() * 10) + 1;
     height = Math.floor(Math.random() * 10) + 1;
 
+    // Ensure inner radius is less than outer radius to avoid negative numbers
     if (innerradius >= outerradius) {
-      outerradius = 10;
+      [outerradius, innerradius] = [innerradius, outerradius];
+      innerradius--;
     }
 
     document.getElementById("question").innerText = `What is the volume of a hollow cylinder with outer radius ${outerradius}, inner radius ${innerradius}, and height ${height}? (Use π ≈ 3.1416)`;
