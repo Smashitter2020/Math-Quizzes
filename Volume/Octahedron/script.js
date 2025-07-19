@@ -3,7 +3,7 @@ let edge;
 function generateQuestion() {
     edge = Math.floor(Math.random() * 10) + 1;
 
-    document.getElementById("question").innerText = `What is the volume of a octahedron with edge (a) ${radius}?`;
+    document.getElementById("question").innerText = `What is the volume of a octahedron with edge (a) ${edge}?`;
     document.getElementById("result").innerText = "";
     document.getElementById("answer").value = "";
 }
