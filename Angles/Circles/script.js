@@ -1,7 +1,7 @@
 let num1, num2;
 
 function generateQuestion() {
-    num1 = Math.floor(Math.random() * 10);
+    num1 = Math.floor(Math.random() * 10) + 2;
     num2 = Math.floor(Math.random() * num1);
 
     document.getElementById("question").innerText = `What is the angle of a circle shaded ${num2} out of ${num1}?`;
@@ -10,10 +10,10 @@ function generateQuestion() {
 }
 
 function checkAnswer() {
-    const userAnswer = parseInt(document.getElementById("answer").value);
+    const userAnswer = parseFloat(document.getElementById("answer").value);
     const correctAnswer = (num2 / num1) * 360;
 
-    if (userAnswer === correctAnswer) {
+    if (Math.abs(userAnswer - correctAnswer) < 0.01) {
         document.getElementById("result").innerText = "Correct! 🎉";
         document.getElementById("result").style.color = "green";
     } else {
