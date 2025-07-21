@@ -3,7 +3,7 @@ let num1, num2;
 function generateQuestion() {
     num1 = Math.floor(Math.random() * 20) + 5;
     num2 = Math.floor(Math.random() * num1);
-    document.getElementById("question").innerText = `What is the probability landing on ${num2} pieces on the spinner but ${num1 - num2} pieces missing?`;
+    document.getElementById("question").innerText = `What is the probability of landing on ${num2} pieces on the spinner but ${num1 - num2} pieces missing? Round to the nearest hundredth.`;
     document.getElementById("result").innerText = "";
     document.getElementById("answer").value = "";
 }
