@@ -4,7 +4,12 @@ function generateQuestion() {
     majorradius = Math.floor(Math.random() * 10) + 1;
     minorradius = Math.floor(Math.random() * 10) + 1;
 
-    document.getElementById("question").innerText = `What is the volume of a torus with minor radius ${minorradius} and major radius ${majorradius}? (Use π ≈ 3.1416)`;
+    if (majorradius <= minorradius) {
+      [majorradius, minorradius] = [minorradius, majorradius];
+      minorradius--;
+    }
+
+    document.getElementById("question").innerText = `What is the surface area of a torus with minor radius ${minorradius} and major radius ${majorradius}? (Use π ≈ 3.1416)`;
     document.getElementById("result").innerText = "";
     document.getElementById("answer").value = "";
 }
