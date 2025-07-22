@@ -11,7 +11,7 @@ function generateQuestion() {
 
 function checkAnswer() {
     const userAnswer = parseFloat(document.getElementById("answer").value);
-    const correctAnswer = (1 / 4) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5)) * Math.pow(edge, 2) * height;
+    const correctAnswer = (1 / 4) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(edge, 2) * height;
 
     if (Math.abs(userAnswer - correctAnswer) < 0.01) { // Allow small rounding tolerance
         document.getElementById("result").innerText = "Correct! 🎉";
