@@ -24,7 +24,7 @@ function lcm(a, b) {
 }
 
 function checkAnswer() {
-    const userAnswer = parseFloat(document.getElementById("answer").value);
+    const userAnswer = parseInt(document.getElementById("answer").value);
     const correctAnswer = lcm(num1, num2);
 
     if (userAnswer === correctAnswer) {
