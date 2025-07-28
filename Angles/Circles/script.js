@@ -4,7 +4,7 @@ function generateQuestion() {
     num1 = Math.floor(Math.random() * 10) + 2;
     num2 = Math.floor(Math.random() * num1);
 
-    document.getElementById("question").innerText = `What is the angle of a circle shaded ${num2} out of ${num1}?`;
+    document.getElementById("question").innerHTML = `What is the angle of a circle shaded <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>${num2}</mn><mn>${num1}</mn></mfrac></math>?`;
     document.getElementById("result").innerText = "";
     document.getElementById("answer").value = "";
 }
@@ -17,7 +17,7 @@ function checkAnswer() {
         document.getElementById("result").innerText = "Correct! 🎉";
         document.getElementById("result").style.color = "green";
     } else {
-        document.getElementById("result").innerText = "Wrong! Try again.";
+        document.getElementById("result").innerText = "Incorrect. Try again.";
         document.getElementById("result").style.color = "red";
     }
 
