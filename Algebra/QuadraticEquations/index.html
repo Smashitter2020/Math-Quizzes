@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equations Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body class="d-flex justify-content-center">
+    <div class="p-5 mt-5 shadow text-center rounded" style="width: 25em;">
+        <div style="font-size: 24px;" class="mb-2 fw-bold">Quadratic Equations Quiz</div>
+        <p id="question"></p>
+        <p>Formula: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mfrac><mrow><mo>-</mo><mi>b</mi><mo>&#xb1;</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></math></p>
+        <input type="number" id="answer" placeholder="Your answer" class="form-control mb-3">
+        <button onclick="checkAnswer()" class="btn btn-primary w-100">Submit</button>
+        <p id="result" class="my-2"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
