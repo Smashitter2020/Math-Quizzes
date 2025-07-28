@@ -3,7 +3,7 @@ let num1, num2;
 function generateQuestion() {
     num1 = Math.floor(Math.random() * 1000) / 100;
     num2 = Math.floor(Math.random() * 1000) / 100;
-    document.getElementById("question").innerText = `What is ${num1} + ${num2}?`;
+    document.getElementById("question").innerText = `What is $$ ${num1} + ${num2} $$?`;
     document.getElementById("result").innerText = "";
     document.getElementById("answer").value = "";
 }
