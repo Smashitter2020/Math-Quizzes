@@ -15,7 +15,7 @@ function generateQuestion() {
 }
 
 function checkAnswer() {
-    const userAnswer = parseInt(document.getElementById("answer").value);
+    const userAnswer = parseFloat(document.getElementById("answer").value);
     const correctAnswer = num1 - num2;
 
     if (userAnswer === correctAnswer) {
