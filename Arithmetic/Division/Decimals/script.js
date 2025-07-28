@@ -3,7 +3,7 @@ let num1, num2;
 function generateQuestion() {
     num2 = (Math.floor(Math.random() * 1000) / 100) + 0.01;
     num1 = (Math.floor(Math.random() * 1000) / 100) + 0.01;
-    document.getElementById("question").innerText = `What is ${num1} ÷ ${num2}?`;
+    document.getElementById("question").innerHTML = `What is <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>${num1}</mn><mo>&#xf7;</mo><mn>${num2}</mn></math>?`;
     document.getElementById("result").innerText = "";
     document.getElementById("answer").value = "";
 }
